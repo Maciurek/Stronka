@@ -5,6 +5,8 @@ body
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   margin: 0 !important;
+  letter-spacing: 0.1px;
+  word-spacing: 1px;
 }
 
 .wrapper
@@ -61,6 +63,11 @@ body
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.socialdivs a
+{
+  color: white;
 }
 
 .fb
