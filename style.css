@@ -17,16 +17,12 @@ body
 .header
 {
   width: 100%;
-  padding: 40px 0;
+  padding: 0 0;
 }
 
 .logo
 {
-  width: 450px;
-  font-size: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  width: 100%;
 }
 
 .nav
@@ -45,10 +41,36 @@ body
 .content
 {
   width: 1000px;
+  min-height: 100px;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
   padding-top: 10px;
+}
+
+.photos
+{
+  width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#photo1
+{
+  float: left;
+  padding: 5px;
+}
+
+#photo2
+{
+  padding: 5px;
+  float: left;
+}
+
+#photo3
+{
+  clear: both;
 }
 
 .socials
@@ -123,6 +145,9 @@ body
   text-align: center;
   background-color: #222222;
   padding: 15px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
 }
 
 #sticky /* zmienić "#" na "." jak nie działa */
@@ -211,4 +236,15 @@ ol > li > ul > li:hover > a
 ol > li:hover > ul
 {
   display: block;
+}
+
+ul > li a
+{
+  text-decoration: none;
+  color: white;
+}
+
+ul > li
+{
+  list-style: none;
 }
