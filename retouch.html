@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" /> <!-- Język Polski -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> <!-- Kompatybilność z Edge -->
+    <title>Strona na Informatykę</title> <!-- Tytuł -->
+    <meta name="description" content="Strona na informatykę o" /> <!-- Opis -->
+    <meta name="keywords" content="" /> <!-- Słowa kluczowe -->
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!-- css -->
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" /> <!-- Fontello -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet"> <!-- Font -->
+  </head>
+  <body>
+    <div class="wrapper"> <!-- Stronka -->
+      <a href="index.html"><div class="header"> <!-- Góra -->
+        <div class="logo"><img src="JPG/1.png" width="100%"></div> <!-- Logo i Napis -->
+      </div></a>
+      <div class="nav"> <!-- Nawigacja -->
+        <ol>
+          <li><a href="index.html">Strona Główna</a></li>
+          <li><a href="Tools/tools.html">Narzędzia</a>
+            <ul>
+              <li><a href="Tools/brush.html">Pędzel</a></li>
+              <li><a href="Tools/eraser.html">Gumka</a></li>
+              <li><a href="Tools/pentool.html">Pióro</a></li>
+            </ul>
+          </li>
+          <li><a href="retouch.html">Obróbka</a>
+            <ul>
+              <li><a href="curves.html">Krzywe</a></li>
+              <li><a href="blur.html">Rozmycie</a></li>
+              <li><a href="colorize.html">Koloryzacja</a></li>
+            </ul>
+          </li>
+          <li><a href="effects.html">Efekty</a>
+            <ul>
+              <li><a href="explode.html">Wybuch</a></li>
+              <li><a href="doublexposure.html">Podwójna Ekspozycja</a></li>
+              <li><a href="smoke.html">Dym</a></li>
+            </ul>
+          </li>
+          <li><a href="accessories.html">Akcesoria</a>
+            <ul>
+              <li><a href="tablet.html">Tablet</a></li>
+              <li><a href="monitor.html">Monitor</a></li>
+              <li><a href="camera.html">Aparat</a></li>
+            </ul>
+          </li>
+          <li><a href="summary.html">Podsumowanie</a></li>
+        </ol>
+      </div>
+      <div class="content"> <!-- Kontent -->
+        <p>Cześć! Ta strona powstała w celu ukazania możliwości Photoshopa, który jest jednym z najbardziej rozbudowanych programów do grafiki rastrowej. Dowiecie się tu między innymi: jak korzystać z Photoshopa, uzyskiwać ciekawe efekt, używać podstawowych narzędzi oraz jakie dodatkowe akcesoria pomagają w korzystaniu Photoshopa. Poniżej przedstawiam niektóre efekty, które można uzyskać po sumiennym przeczytaniu tego poradnika. Powodzenia w waszych projektach oraz miłego czytania!</p>
+      </div>
+      <div class="photos">
+        <div id="photo1">
+          <img src="JPG/twarz.png" width="490px" height="490px">
+        </div>
+        <div id="photo2">
+          <img src="JPG/2exposure.png" width="490px" height="490px">
+        </div>
+        <div id="photo3">
+          <img src="JPG/wybuch.png" width="990px">
+        </div>
+      </div>
+      <div class="socials">
+        <div class="socialdivs">
+          <a href="#">
+            <div class="fb">
+              <i class="icon-facebook"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="yt">
+              <i class="icon-youtube"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="tw">
+              <i class="icon-twitter"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="gplus">
+              <i class="icon-gplus"></i>
+            </div>
+          </a>
+          <div style="clear:both"> </div>
+        </div>
+      </div>
+      <div class="footer">
+        Informatyka.com &copy; 2018
+      </div>
+    </div>
+
+    <script src="jquery-3.1.1.min.js"></script> <!-- Jak gdzieś nie działa przyklejanie menu dodać "." przed sticky w css i usunąć position sticky w divie nav -->
+    <script>
+      $(document).ready(function() {
+      var NavY = $('.nav').offset().top;
+
+      var stickyNav = function(){
+      var ScrollY = $(window).scrollTop();
+
+      if (ScrollY > NavY) {
+          $('.nav').addClass('sticky');
+      } else {
+        $('.nav').removeClass('sticky');
+      }
+      };
+
+      stickyNav();
+
+      $(window).scroll(function() {
+        stickyNav();
+      });
+      });
+    </script>
+
+  </body>
+</html>
