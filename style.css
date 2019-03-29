@@ -49,6 +49,19 @@ body
   padding-top: 10px;
 }
 
+h3
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    color: ;
+}
+
+.normal > li
+{
+    list-style-type: disc;
+}
+
 .photos
 {
   width: 1000px;
@@ -61,17 +74,20 @@ body
 {
   float: left;
   padding: 5px;
+    display: block;
 }
 
 #photo2
 {
   padding: 5px;
   float: left;
+    display: block;
 }
 
 #photo3
 {
   clear: both;
+    display: block;
 }
 
 .socials
